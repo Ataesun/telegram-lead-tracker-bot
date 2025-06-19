@@ -2,8 +2,8 @@ import os
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 
-BOT_TOKEN = os.getenv("7584622126:AAEWINHkA9s1k9bbaEw8yxulc_Df1l2QnHg")
-ADMIN_ID = int(os.getenv("1649363870", "0"))
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+ADMIN_ID = int(os.getenv("ADMIN_ID", "0"))
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user = update.effective_user
