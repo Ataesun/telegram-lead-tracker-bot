@@ -9,7 +9,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user = update.effective_user
     source = context.args[0] if context.args else "неизвестно"
     await update.message.reply_text(f"Здравствуйте! Благодарим вас за обращение.\n"
-    "С вами свяжутся, как только специалист освободится.: {source}")
+    "С вами свяжутся, как только специалист освободится.")
 
     # Уведомление админу
     text = f"👤 @{user.username or user.full_name}\n📌Новый лид! Источник: {source}"
